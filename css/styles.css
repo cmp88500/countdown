@@ -14,5 +14,28 @@ body {
 }
 
 #countdown {
+  margin: 0;
   color: #fff;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  font-size: 1.6em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: green;
+  padding: 20px;
+}
+
+#countdown p {
+  padding: 5px 0;
+}
+
+#countdown p:first-child {
+  letter-spacing: 0.1em;
+}
+
+#countdown p:last-child {
+  letter-spacing: 0.4em;
 }
