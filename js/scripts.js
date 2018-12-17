@@ -6,13 +6,11 @@ function countdown(x) {
   let milSecs = [86400000, 3600000, 60000, 1000];
   let times = []
   let days = Math.floor(diff / milSecs[0]);
-  let hours = Math.floor(diff % milSecs[0]/milSecs[1]);
-  let minutes = Math.floor(diff % milSecs[1]/milSecs[2]);
-  let seconds = Math.floor(diff % milSecs[2]/milSecs[3]);
   console.log(days);
-  console.log(hours);
-  console.log(minutes);
-  console.log(seconds);
+  for (i=0; i<milSecs.length-1; i++) {
+    let a = Math.floor(diff % milSecs[i]/milSecs[i+1]);
+    console.log(a);
+  }
 }
 
 countdown("Dec 25, 2018 00:00:00");
