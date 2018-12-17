@@ -16,6 +16,7 @@ body {
 #countdown {
   margin: 0;
   color: #fff;
+  width: 80%;
   box-sizing: border-box;
   font-family: Helvetica;
   font-size: 1.6em;
@@ -24,7 +25,8 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: green;
+  background-color: rgba(57,57,57,0.7);
+  border: 1px solid black;
   padding: 20px;
 }
 
@@ -38,4 +40,35 @@ body {
 
 #countdown p:last-child {
   letter-spacing: 0.4em;
+}
+
+@media only screen and (max-width: 705px) {
+  #countdown {
+    font-size: 1.3em;
+    width: 80%;
+  }
+
+  #countdown p {
+    padding: 3px 0;
+  }
+
+  #countdown p:last-child {
+    letter-spacing: 0.2em;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  #countdown {
+    font-size: 1.3em;
+    box-sizing: content-box;
+    width: 80%;
+  }
+
+  #countdown p {
+    padding: 3px 0;
+  }
+
+  #countdown p:last-child {
+    letter-spacing: 0.2em;
+  }
 }
