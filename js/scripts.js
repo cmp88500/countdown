@@ -3,17 +3,10 @@ function countdown(x) {
   let countDate = new Date(x).getTime();
   let diff = countDate - currentDate;
 
-  let seconds = 1000;
-  let minutes = 1000 * 60;
-  let hours  = 1000 * 60 * 60;
-  let days = 1000 * 60 * 60 * 24;
-  console.log(seconds);
-  console.log(minutes);
-  console.log(hours);
+  let milSecs = [86400000, 3600000, 60000, 1000];
+  let times = []
+  let days = Math.floor(diff / milSecs[0]);
   console.log(days);
-
-  let times = [1000, 60000, 3600000, 86400000];
-  console.log(times);
 }
 
 countdown("Dec 25, 2018 00:00:00");
